@@ -6,3 +6,4 @@ export const delete_task = (item) => {
 	localStorage.setItem("to_do_tasks", JSON.stringify(newState));
 	item.remove();
 };
+// komentarz
