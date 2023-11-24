@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List Application</title>
+    <link rel="icon" type="image/x-icon" href="/public/img/alien.ico">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="/first_page.html">Link to first page</a>
+        <a href="/second_page.html">Link to second page</a>
+        <a href="/third_page.html">Link to third one</a>
+    </div>
+
+    <div class="header">
+        <h1>TODO List Web Application</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="column sidebar">
+            <h2>First sidebar</h2>
+            <p>Here could be posts, adverbs</p>
+        </div>
+
+        <div class="column middle">
+            <header>
+                <h2>TO DO List</h2>
+                <input type="text" placeholder="Type some text and press enter to add task to the list." name="task"
+                    id="task">
+            </header>
+
+            <!-- <ul>
+                <li class="task_completed">First task
+                    <div class="buttons">
+                        <button class="complete"></button>
+                        <button class="remove"></button>
+                    </div>
+                </li>
+                <li>Second task
+                    <div class="buttons">
+                        <button class="complete"></button>
+                        <button class="remove"></button>
+                    </div>
+                </li>
+                <li>Third task
+                    <div class="buttons">
+                        <button class="complete"></button>
+                        <button class="remove"></button>
+                    </div>
+                </li>
+            </ul> -->
+
+            <ul id="tasks_list"></ul>
+
+            <div id="bottom"></div>
+        </div>
+
+        <div class="column sidebar">
+            <h2>Second sidebar</h2>
+            <p>Here could be posts, adverbs</p>
+        </div>
+
+    </div>
+
+
+    <div style="clear: both;"></div>
+
+    <div class="footer">
+        <p>Footer &copy; AlienSoft</p>
+    </div>
+    <script src="/public/js/tasks_list.js"></script>
+    <script type="module" src="/public/js/new_task.js"></script>
+    <script type="module" src="/public/js/update_task.js"></script>
+    <script type="module" src="/public/js/delete_task.js"></script>
+</body>
+
+</html>
